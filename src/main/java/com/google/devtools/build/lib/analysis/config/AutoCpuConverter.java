@@ -72,6 +72,8 @@ public class AutoCpuConverter implements Converter<String> {
               return "s390x";
             case MIPS64:
               return "mips64";
+	    case LOONGARCH64:
+	      return "loongarch64";
             case RISCV64:
               return "riscv64";
             default:
