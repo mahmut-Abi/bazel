@@ -459,8 +459,10 @@ http_archive(
     ],
 )
 
-dist_http_archive(
+
+local_repository(
     name = "platforms",
+    path = "platforms",
 )
 
 # This must be kept in sync with src/main/java/com/google/devtools/build/lib/bazel/rules/android/android_remote_tools.WORKSPACE
